@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>return 값</title>
+  <style>
+    h2 {
+      background-color: yellow;
+    }
+
+    h3{ 
+      background-color: steelblue;
+    }
+
+    h4 {
+      background-color: goldenrod;
+    }
+  </style>
+</head>
+<body>
+  <h2>안녕 자바스크립트</h2>
+  <h3>그래그래 자바스크립트</h3>
+  <h4>오늘도 자바스크립트</h4>
+
+  <script>
+    // let a = 더하기(100, 200);
+    function 더하기(a, b) {
+      document.write (a + b);
+      return a + b //리턴값
+    }
+
+    let h = 더하기(200, 400);
+    console.log(h);
+    
+    document.querySelector('h2').style.height = h + 'px';
+
+    function 곱하기(d, f) {
+      document.write(d, f);
+      return d * f;
+    }
+
+    let c = 곱하기(100, 2);
+
+    document.querySelector('h3').style.height = c + 'px';
+
+    function 나누기(e, z) {
+      document.write(e, z);
+      return e / z
+    }
+
+    let g = 나누기(100 / 5);
+    document.querySelector('h4').style.height = g + 'px'
+  
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1분 코딩_javascript</title>
+  <style>
+    h1 {
+      background-color: yellowgreen;
+    }
+  </style>
+</head>
+<body>
+  
+  <h1>코딩_javascript</h1>
+
+  <script>
+    function sample() {
+      console.log('ㅋㅋㅋㅋ')
+    }
+
+    sample();
+
+    // return 
+    function 리턴(){
+      return;
+      console.log('리턴');
+    }
+
+    리턴();
+
+    // 조건문에 return 
+    let a = 100;
+
+    function 조건문리턴(){
+      if( a > 99){
+        return;
+      } 
+
+      console.log('조건문리턴 성립안할경우 인출');
+    };
+
+    조건문리턴();
+
+    // ▲ 리턴문의 용도는 어떤 조건문(if와 같은)을 실행해서 해당이 되면
+    // 아래내용을 실행안하고 함수를 종료해 버린다
+
+    function 더하기3(a, b) {
+      document.write(a + b);
+    }
+
+    function 더하기4(a, b) {
+      return a + b; //리턴값 혹은 반환값
+    }
+
+    console.log( 더하기3(200, 200) );
+
+  //  리턴값이 있으면 함수가 실행 결과로 우리에게 던저주는 
+  //  값이 있기 때문에 그 값을 사용할 수 있다 
+
+    let h = 더하기4(500, 200);
+    console.log(h);
+
+    document.querySelector('h1').style.height = h + 'px';
+
+      
+    // a와 b는 매개변수(paramiter);
+     function 더하기(a, b) {
+     console.log(a + b);
+   }
+
+   더하기(1, 100);
+
+  //  변수와 문자열들 더하기
+     function 인사(이름) {
+     console.log('안녕? 나는' + 이름 + '야.');
+   }
+
+   인사(' 일분이 ');
+  </script>
+</body>
+</html>
