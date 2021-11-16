@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>return 값</title>
   <style>
+    body {
+      text-align: center;
+    }
     h2 {
       background-color: yellow;
     }
@@ -50,10 +53,60 @@
       return e / z
     }
 
-    let g = 나누기(100 / 5);
-    document.querySelector('h4').style.height = g + 'px'
+    let g = 나누기(100, 5);
+    document.querySelector('h4').style.height = g + 'px';
   
+  // 함수의 기본적인 형태 
+  // 1. 매개변수 없는 함수 return함수 
+  function sample(){
+    if(a > 0) {
+      return;
+    }
 
+    console.log('ㅋㅋㅋㅋㅋ')
+  }
+
+  function 인사(이름) {
+    console.log('안녕? 나는 ' + 이름 + '야');
+  }
+
+  인사('일분이');
+
+
+
+  function plus(a, b) {
+    document.write(a + b);
+  }
+
+  function plus2(a, b) {
+    document.write(a + b);
+    return a + b; //리턴값
+  }
+
+  // 변수의 유효범위 (scope) :변수를 인식할 수 있는 범위 
+  var a = 100;  //전역변수
+
+  function sample1() {
+    console.log('전역변수에서 출력한 ' + a);
+  }
+  sample1();
+
+  
+  function sample2() {
+    var b = 200; //지역변수
+    console.log('지역변수에서 출력한 ' + b);
+  }
+  sample2();
+
+
+  function sample3() {
+    var z = 400;
+    console.log('함수밖에서 만든 변수 ' + z);
+  }
+
+  sample3();
+  console.log(z)
+  
   </script>
 </body>
 </html>
